@@ -1,11 +1,12 @@
 import React from 'react'
 import '../styles/App.css';
+import Header from './Header/Header';
 const App = () => {
 
 
   return (
     <div id="main">
-      <h1>This</h1>
+      <Header />
     </div>
   )
 }
