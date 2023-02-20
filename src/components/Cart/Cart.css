@@ -14,3 +14,14 @@
     font-weight: 500;
     padding: 10px;
 }
+.cart_items{
+    padding: 10px;
+}
+.subtotal{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.subtotal div{
+    margin-left: 10px
+}
