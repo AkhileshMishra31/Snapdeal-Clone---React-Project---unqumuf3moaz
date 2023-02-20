@@ -1,0 +1,70 @@
+.home {
+    background-color: transparent;
+    height: 800px;
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 0.8fr 3.2fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 0.5fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.side_bar_grid {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.corousel_grid {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.pincode_grid {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.product_slider {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.bar_code {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.bar_code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar_code img {
+    height: 80px;
+}
+
+.bar_code_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar_code_content h4 {
+    white-space: nowrap;
+}
+.bar_code_content span{
+    color: gray;
+    text-align: center;
+}

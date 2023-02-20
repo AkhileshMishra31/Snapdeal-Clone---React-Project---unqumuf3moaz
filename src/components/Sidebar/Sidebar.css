@@ -1,0 +1,46 @@
+.sidebar_container {
+    padding: 2px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.top_categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar_container  h3 {
+    padding-top: 18px;
+    font-size: 11px;
+    color: #333333;
+    margin-left: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.top_categories span {
+    margin-left: 0.6rem;
+    font-size: 0.95rem;
+    padding: 10px 10px;
+    white-space: nowrap;
+}
+
+.top_categories_menu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.more_categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.more_categories span{
+    padding: 8px 5px;
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    padding: 10px 10px;
+    white-space: nowrap;
+}

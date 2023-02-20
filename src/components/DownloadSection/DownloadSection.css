@@ -1,0 +1,48 @@
+.download_section {
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.download_inner_section {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.image_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download_description {
+    display: flex;
+    height: 156px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.download_description h3{
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+}
+.download_description button{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+.green_leaf{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

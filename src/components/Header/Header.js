@@ -3,6 +3,7 @@ import "./Header.css"
 import { FaShoppingCart } from "react-icons/fa"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { RxAvatar } from 'react-icons/rx'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -25,16 +26,22 @@ const Header = () => {
             {/* lower */}
             <div className='lower'>
                 <div className='container navbar'>
+
                     <div className='header_section_one'>
-                        <img src='https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg' />
+                        <NavLink to="/">
+                            <img src='https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg' />
+                        </NavLink>
                     </div>
+
                     <div className='header_section_two'>
                         <input type="text" />
                         <button> <AiOutlineSearch />Search</button>
                     </div>
                     <div className='header_section_three'>
                         <span>Cart</span>
-                        <FaShoppingCart size={28} />
+                        <NavLink to="/cart">
+                            <FaShoppingCart size={28} />
+                        </NavLink>
                     </div>
                     <div className='header_section_four'>
                         <span>Sign in</span>
@@ -56,7 +63,7 @@ const Header = () => {
                             <hr></hr>
                             <div className='dropdown_login'>
                                 <p>if you are a new userRegister</p>
-                                <button>Log in</button>
+                                <NavLink to="/login"><button>Log in</button></NavLink>
                             </div>
                         </div>
                     </div>

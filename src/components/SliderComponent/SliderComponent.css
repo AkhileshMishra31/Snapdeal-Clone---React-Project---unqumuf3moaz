@@ -1,0 +1,27 @@
+.slidercomponent {
+    position: relative;
+}
+
+.slidercomponent img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel__next-button {
+    position: absolute;
+    top: 170px;
+    z-index: 2;
+    right: 5px;
+}
+
+.carousel__back-button {
+    position: absolute;
+    top: 170px;
+    z-index: 2;
+    left: 5px;
+}
+
+.prev, .next{
+    background: transparent;
+    border: none;
+}
