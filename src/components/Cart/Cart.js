@@ -17,7 +17,7 @@ const Cart = () => {
                 <p>Subtotal:-</p>
                 <p>RS.233</p>  
                 <div>
-                    <p>Items</p>
+                    <p>Items:-</p>
                     <p>3</p>
                 </div> 
             </div>

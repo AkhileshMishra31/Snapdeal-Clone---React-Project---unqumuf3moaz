@@ -4,8 +4,15 @@ import { FaShoppingCart } from "react-icons/fa"
 import { AiOutlineSearch } from 'react-icons/ai'
 import { RxAvatar } from 'react-icons/rx'
 import { NavLink } from 'react-router-dom'
+import { useSelector } from 'react-redux';
+import { auth } from '../../Firebase'
 
 const Header = () => {
+    const user = useSelector((state) => state.auth.user);
+
+    const signout=()=>{
+        auth.signOut();
+    }
     return (
         <div className='header'>
             {/* upper */}
@@ -44,12 +51,13 @@ const Header = () => {
                         </NavLink>
                     </div>
                     <div className='header_section_four'>
-                        <span>Sign in</span>
-                        <RxAvatar size={28} />
+                        <span>{user?user.name:"Sign in"}</span>
+                        {user?<img src={user.photoURL}/>: <RxAvatar size={28} />}
+                       
                         <div className="dropdown-content">
                             <div className='dropdown_menu'>
                                 <RxAvatar size={20} />
-                                <span>Your Account</span>
+                                <span>{user?user.name:"Your Account"}</span>
                             </div>
                             <div className='dropdown_menu'>
                                 <RxAvatar size={20} />
@@ -62,8 +70,12 @@ const Header = () => {
                             </div>
                             <hr></hr>
                             <div className='dropdown_login'>
-                                <p>if you are a new userRegister</p>
-                                <NavLink to="/login"><button>Log in</button></NavLink>
+                                {
+                                    user ? (<><p style={{ textAlign: "center", marginRight: "10px" }}>{user.email}</p>
+                                        <button onClick={signout}>Log Out</button></>) : (<><p>if you are a new userRegister</p>
+                                            <NavLink to="/login"><button>Log in</button></NavLink></>)
+                                }
+
                             </div>
                         </div>
                     </div>
