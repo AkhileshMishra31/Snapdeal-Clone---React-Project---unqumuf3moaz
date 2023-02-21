@@ -12,6 +12,7 @@ import Cart from './Cart/Cart';
 import { auth } from '../Firebase';
 import { useDispatch , useSelector} from 'react-redux';
 import { login, logout } from '../features/auth/authSlice';
+import Productdescription from './Productdecription.js/Productdescription';
 const App = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user);
@@ -48,11 +49,11 @@ const App = () => {
     )
   }
 
-  const Layoutwo = () => {
+  const Layoutwo = ({children}) => {
     return (
       <>
         <Header />
-        <Cart />
+        {children}
       </>
     )
   }
@@ -60,9 +61,11 @@ const App = () => {
   return (
     <div id="main">
       <Routes>
-        <Route path="/" element={<Layoutone />} />
-        <Route path="/cart" element={<Layoutwo />} />
-        <Route path="/login" element={<Login />}></Route>
+        <Route exact path="/" element={<Layoutone />} />
+        <Route exact path="/cart" element={<><Layoutwo ><Cart/></Layoutwo></>} />
+        <Route exact path="/login" element={<Login />}></Route>
+        <Route exact path="/products" element={<Layoutone />}></Route>
+        <Route exact path="/products/:id" element={<><Layoutwo ><Productdescription/></Layoutwo></>}></Route>
       </Routes>
     </div>
   )
