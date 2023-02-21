@@ -25,3 +25,7 @@
 .subtotal div{
     margin-left: 10px
 }
+
+.emptybasket{
+    height: 100%;
+}

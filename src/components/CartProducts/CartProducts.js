@@ -1,25 +1,28 @@
 import React from 'react'
 import "./CartProducts.css"
+import { useSelector,useDispatch } from "react-redux"
+import{incrementQuantity,decrementQuantity,removeItem} from "../../features/Shopcart/shopcartSlice"
 
-const CartProducts = () => {
+const CartProducts = ({id, imagesrc, description, price ,quantity})=> {
+    const dispatch = useDispatch()
     const inreasequantity = () => {
-
+       dispatch(incrementQuantity(id))
     }
 
     const removefrombasket = () => {
-
+      dispatch(removeItem(id))
     }
 
     const decreasequantity = () => {
-
+        dispatch(decrementQuantity(id))
     }
     return (
         <div className='cart_products'>
             <div className='cart_products_image'>
-                <img src="https://n4.sdlcdn.com/imgs/k/e/u/large/Veirdo-100-Cotton-Regular-Fit-SDL302182620-1-f0fac.jpg" />
+                <img src={imagesrc} />
             </div>
             <div className='cart_products_description'>
-                <h2>Rigo - Navy Blue Cotton Regular Fit Women's Jumpsuit ( Pack of 1 )</h2>
+                <h2>{description}</h2>
                 <div>
                     <span>⭐</span>
                     <span>⭐</span>
@@ -27,16 +30,16 @@ const CartProducts = () => {
                     <span>⭐</span>
                 </div>
                 <div className='price'>
-                    <span>Rs 299</span>
+                    <span>{price}</span>
                     <span> 75% OFF </span>
                     <div className='product_quantity'>
                         <p>Quantity</p>
                         <button onClick={decreasequantity} className='increse_quantity'>-</button>
-                        <p>2</p>
+                        <p>{quantity}</p>
                         <button onClick={inreasequantity} className='increse_quantity'>+</button>
                     </div>
                 </div>
-                <button className='remove_button'>Remove to cart</button>
+                <button onClick={removefrombasket} className='remove_button'>Remove to cart</button>
             </div>
         </div>
     )
