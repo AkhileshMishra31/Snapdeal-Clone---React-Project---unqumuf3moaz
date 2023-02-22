@@ -44,9 +44,9 @@ export const productsdata = [
     },
     {
         id:123456786,
-        imgsrc: "https://n3.sdlcdn.com/imgs/k/j/9/Sirona-1-Intimate-Cloths-Under-SDL165879351-3-1a5d3.jpg",
+        imgsrc: "https://n2.sdlcdn.com/imgs/i/z/e/Maxbell-USB-Rechargeable-Electronic-Flameless-SDL679184483-1-08e0f.jpg",
         stars: "",
-        description: "Sirona Disposable Underarm Sweat Pads for Men and Women - 12 Pads | Peel-off | Prevents Stains, Absorbs Sweat & Unpleasant Odour",
+        description: "Maxbell USB Rechargeable Electronic Flameless Lighter",
         price: 5999,
         ratings: 4,
         stockleft: 4
@@ -62,7 +62,7 @@ export const productsdata = [
     },
     {
         id:123456788,
-        imgsrc: "https://n3.sdlcdn.com/imgs/k/i/j/Rigo-Cotton-Regular-Fit-Navy-SDL576376983-3-39d9f.jpg",
+        imgsrc: "https://n4.sdlcdn.com/imgs/j/o/y/Aford-Black-Hiking-Trekking-Boot-SDL911051804-1-8c260.jpeg",
         stars: "",
         description: "Rigo - Navy Blue Cotton Regular Fit Women's Jumpsuit ( Pack of 1 )",
         price: 599,
@@ -71,9 +71,8 @@ export const productsdata = [
     },
     {
         id:123456789,
-        imgsrc: "https://n3.sdlcdn.com/imgs/k/i/j/Rigo-Cotton-Regular-Fit-Navy-SDL576376983-3-39d9f.jpg",
-        stars: "",
-        description: "Rigo - Navy Blue Cotton Regular Fit Women's Jumpsuit ( Pack of 1 )",
+        imgsrc: "https://n2.sdlcdn.com/imgs/k/k/l/NBOX-Transparent-TPU-Glossy-Cases-SDL759838376-1-cf899.jpg",
+        description: "Aford Black Hiking & Trekking Boot",
         price: 599,
         ratings: 4,
         stockleft: 4
